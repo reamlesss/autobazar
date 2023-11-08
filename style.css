@@ -47,11 +47,13 @@ h2{
     filter: brightness(70%);
 }
 
-.filter-container{
+.filter{
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 10px;
+    flex-wrap: wrap;
+    max-width: 40vw;
 }
 
 .form-select{
@@ -69,4 +71,21 @@ h2{
     outline: none !important;
     
 
+}
+
+.filter-container{
+    display: flex;
+    justify-content: center;
+}
+
+.search-button{
+    display: flex;
+    justify-content: center;
+}
+
+#search-button{
+    background-color: tomato;
+    outline: none !important;
+    border: none;
+    
 }
