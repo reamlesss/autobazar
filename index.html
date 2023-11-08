@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <nav class="navbar navbar-expand-lg  fixed-top shadow-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand font-weight-bold text-dark fw-bold" href="#">Autobazar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link active text-dark" aria-current="page" href="#">Domů</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Oblíbené inzeráty</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link text-dark" href="#">Moje inzeráty</a>
+              </li>
+
+              <li class="nav-item">
+               <a  class="nav-link text-dark" href="#">Přidat inzerát</a>
+              </li>
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Vyhledat " aria-label="Search">
+              <button class="btn btn-dark" type="submit">Vyhledat</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+
+      <h2 class="text-dark">Filtrované vyhledávání</h2>
+
+      <div class="filter-container">
+        <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow-none " id="floatingInput" >
+            <label for="floatingInput">Název auta</label>
+          </div>
+
+          <select class="form-select shadow-none" aria-label="Default select example">
+            <option selected>Značka</option>
+            <option value="1">VW</option>
+            <option value="2">BMW</option>
+            <option value="3">Mercedes-Benz</option>
+          </select>
+          <div class="form-floating mb-3">
+            <input type="number" class="form-control shadow-none " id="floatingInput"  >
+            <label for="floatingInput">Najeto km</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow-none " id="floatingInput" >
+            <label for="floatingInput">Cena od (czk)</label>
+          </div>
+
+          <div class="form-floating mb-3">
+            <input type="text" class="form-control shadow-none " id="floatingInput" >
+            <label for="floatingInput">Cena do (czk)</label>
+          </div>
+          
+      </div>
+      
+
+      
+      <h2 class="text-dark " ><strong style="color: tomato;">TOP</strong> inzeráty</h2>
+
+
+      <div class="carousel-container">
+        <div id="carouselExampleCaptions" class="carousel slide shadow-lg">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="https://www.bazos.cz/img/2/534/176766534.jpg?t=1699369661" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size: 40px;">BMW Z3 2.8 MANUÁL KABRIO KLIMA VÝHŘEV. BEZ KOROZE</h5>
+                  <p style="font-size: 20px;">Super kara</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.bazos.cz/img/3/795/176770795.jpg?t=1699376315" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size: 30px;">VW Transporter T6 Topení EBERSPACHER jako u Multivan</h5>
+                  <p style="font-size: 20px;">Stavba-dílna-zahrada-toto auto potěší každého pracovníka, firmu či kutila…</p>
+                </div>
+              </div>
+              <div class="carousel-item">
+                <img src="https://www.bazos.cz/img/2/272/176697272.jpg?t=1699283990" class="d-block w-100 carousel-img" alt="...">
+                <div class="carousel-caption d-none d-md-block">
+                  <h5 style="font-size: 30px;">Smart Fortwo 0.6i PoloAutomat,STK do 4/024,Dobrý stav</h5>
+                  <p style="font-size: 20px;">PoloAUTOMAT. Sport-Line,model.2001,Naj.120tis.km</p>
+                </div>
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+      </div>
+      
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+
+
+</body>
+</html>
