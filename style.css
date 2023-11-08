@@ -36,15 +36,21 @@ h2{
 }
 .carousel{
     max-width: 50vw;
-
-    
-
-    /* border: 7px solid tomato;
-    border-radius: 10px; */
+}
+.carousel-inner{
+    border-radius: 10px;
 }
 .carousel-img{
-    border-radius: 10px;
+    /* border-radius: 10px; */
     filter: brightness(70%);
+}
+.active{
+    background-color: tomato;
+    
+    
+}
+.carousel-indicators [data-bs-target] {
+    background-color: tomato;
 }
 
 .filter{
@@ -87,5 +93,70 @@ h2{
     background-color: tomato;
     outline: none !important;
     border: none;
+    
+}
+
+.faq-container{
+    justify-content: center;
+    
+    
+}
+.accordion{
+    gap: 0 !important;
+    margin: 0;
+    margin: 0 !important;
+    /* border: 1px solid tomato; */
+    border-radius: 10px;
+}
+
+.accordion h2{
+    margin: 0;
+    
+}
+.accordion:focus, .accordion-button:focus, .accordion-header:focus{
+    outline:none;
+    box-shadow: none;
+    /* color: transparent; */
+    background-color: transparent;
+}
+.accordion{
+
+}
+.accordion-item{
+    border: 1px solid tomato;
+}
+
+.table{
+    max-width: 50vw;
+    border-color: rgba(255, 99, 71, 0.595);
+}
+
+.service-container{
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    transition: .5s all;
+}
+.service-container:hover{
+    transform: scale(110%);
+}
+
+.list-group{
+    margin-bottom: 2vh;
+    margin-left: 2vw;
+    border-color: tomato;
+}
+.list-group-item{
+    border-color: tomato;
+}
+
+
+.modal-close-button{
+    background-color: tomato;
+    transition: 1s all;
+}
+
+.modal-close-button:hover{
+    transform: scale(105%);
     
 }
