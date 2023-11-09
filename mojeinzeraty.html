@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+    <title>Moje inzeráty</title>
+</head>
+<body data-spy="scroll" data-target="#navbar" data-offset="50">
+
+    <nav class="navbar navbar-expand-lg  fixed-top shadow-lg" id="navbar">
+        <div class="container-fluid">
+          <a class="navbar-brand font-weight-bold text-dark fw-bold" href="./index.html">Autobazar</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+
+              <li class="nav-item">
+                <a class="nav-link  " aria-current="page" href="./index.html">Domů</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link " href="#closed" >Uzavřené inzeráty</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link active nav-active" href="#opened">Moje inzeráty</a>
+              </li>  
+
+              <li class="nav-item">
+               <a  class="nav-link " href="#">Přidat inzerát</a>
+              </li>
+            
+            </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Nissan X-trail 2019" aria-label="Search">
+              <button class="btn btn-dark" type="submit">Vyhledat</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+
+      <div id="opened">
+    <h2>Moje inzeráty</h2>
+    
+    <div class="inzeraty-container" >
+        <div class="inzeraty" >
+            <div class="card text-bg-dark">
+                <img src="https://www.bazos.cz/img/2/287/176806287.jpg?t=1699443669" class="card-img" alt="..." style="filter: brightness(70%);">
+                <div class="card-img-overlay" style="display: flex; justify-content: center; align-items: center; flex-direction:column;">
+                  <h5 class="card-title">BMW 320D GT 135kw automat, 9/2013, DE, 295tkm</h5>
+                  <p class="card-text">Vůz je celkově ve velmi dobré stavu, bez nutné vstupní investice. Pravidelně servisovaný. Lak i interiér je hezký a zachovalý. Z výbavy vše plně funkční. Jezdí perfektně. Spolehlivá dieselová Motorizace bez AdBlue.
+                </p>
+                <button class="btn btn-dark go-to-button fs-4" type="submit">Otevřít</button>
+                </div>
+              </div>
+              <div class="card text-bg-dark">
+                <img src="https://www.bazos.cz/img/1/144/176146144.jpg?t=1698954316" class="card-img" alt="..." style="filter: brightness(70%);">
+                <div class="card-img-overlay" style="display: flex; justify-content: center; align-items: center; flex-direction:column;">
+                  <h5 class="card-title">Prodám/vyměním Mercedes Benz C63S Performance w205,TOP</h5>
+                  <p class="card-text">Výměna možná. Nebráním se výměně za jiné vozidlo (nejlépe SUV) s oboustranným doplatkem (doplatek).
+                </p>
+                <button class="btn btn-dark go-to-button fs-4" type="submit">Otevřít</button>
+                </div>
+              </div>
+        </div>
+    </div>  
+    </div>
+
+
+
+    <div id="closed">
+
+    <h2 >Uzavřené inzeráty</h2>
+
+
+    <div class="inzeraty-container">
+        <div class="inzeraty">
+            <div class="card text-bg-dark" data-bs-toggle="tooltip" data-bs-title="tento inzerat je uzavřen">
+                <img src="https://www.bazos.cz/img/1/363/176587363.jpg?t=1699347713"lass="card-img" alt="..." style="filter: brightness(70%);">
+                <div class="card-img-overlay" style="display: flex; justify-content: center; align-items: center; flex-direction:column;">
+                  <h5 class="card-title">S 350 LONG 4Matic ZAKOUPEN CZ 1 MAJITEL TOP</h5>
+                  <p class="card-text">ORIGINÁL STAV I KM!!! ZAKOUPENO MB ČR ZLÍN 2016,Čalounění:815Kůže nappa porcelain/černá,B03 Funkce ECO start/stopB51 Sada na opravu pneumatik TIREFIT,K11 
+                </p>
+               
+                </div>
+              </div>
+              <div class="card text-bg-dark" data-bs-toggle="tooltip" data-bs-title="tento inzerat je uzavřen">
+                <img src="https://www.bazos.cz/img/2/276/176652276.jpg?t=1699288165" class="card-img" alt="..." style="filter: brightness(70%);">
+                <div class="card-img-overlay" style="display: flex; justify-content: center; align-items: center; flex-direction:column;">
+                  <h5 class="card-title">Volvo V40 D2 2.0, 2017, full LED, nav</h5>
+                  <p class="card-text">možnost sjednání prodloužené záruky kryjící mechanické a elektrické poruchy vozu až na 36 měsíců
+                </p>
+         
+                </div>
+              </div>
+        </div>
+    </div>  
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js" integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+" crossorigin="anonymous"></script>
+<!-- 
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script> -->
+
+    <script>
+        const tooltipTriggerList = document.querySelectorAll('[data-bs-toggle="tooltip"]')
+const tooltipList = [...tooltipTriggerList].map(tooltipTriggerEl => new bootstrap.Tooltip(tooltipTriggerEl))
+    </script>
+</body>
+</html>

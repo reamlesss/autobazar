@@ -4,6 +4,7 @@ html{
 }
 body{
     font-family: 'Prompt', sans-serif;
+    position: relative;
 }
 
 .nav-item{
@@ -98,6 +99,7 @@ h2{
 
 .faq-container{
     justify-content: center;
+    margin-bottom: 5vh;
     
     
 }
@@ -127,8 +129,13 @@ h2{
 }
 
 .table{
-    max-width: 50vw;
+    max-width: 60vw;
     border-color: rgba(255, 99, 71, 0.595);
+    
+    
+}
+.tbr{
+    border-radius: 10px;
 }
 
 .service-container{
@@ -158,5 +165,85 @@ h2{
 
 .modal-close-button:hover{
     transform: scale(105%);
+
+}
+
+
+.inzeraty-container{
+    display: flex;
+    justify-content: center;
+    
+    /* flex-direction: column; */
+}
+
+.inzeraty{
+    
+    max-width: 50vw;
+    flex-direction: column;
+    gap: 10px;
     
 }
+
+
+/* .nav-active{
+    animation: colorChange 1s ;
+    color: white;
+}  */
+
+@keyframes colorChange {
+    0%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+    
+}
+
+.navbar-nav .active .nav-link {
+    color: white; /* Change the color to white */
+    /* Add any additional styles you want for the active link */
+  }
+
+  .active{
+    color: white !important;
+  }
+
+  .nav-item{
+    text-decoration: none;
+  }
+.card{
+    max-width: 50vw;
+    border: 5px solid tomato;
+    margin-top: 10vh;
+}
+
+.card h5{
+    font-size: 40px;
+    text-align: center;
+}
+
+.card p{
+    text-align: center;
+}
+
+.go-to-button{
+    background-color: rgba(255, 99, 71, 0.38);
+    border: 1px solid tomato;
+}
+.go-to-button:hover{
+    background-color: rgba(255, 99, 71, 1);
+    border: 1px solid tomato;
+}
+
+@media (max-width: 768px) {
+    .form-select{
+        max-width: 40vw;
+    }
+
+    .service-container{
+        flex-direction: column;
+    }
+}
+
+
