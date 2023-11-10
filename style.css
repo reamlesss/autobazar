@@ -121,9 +121,7 @@ h2{
     /* color: transparent; */
     background-color: transparent;
 }
-.accordion{
 
-}
 .accordion-item{
     border: 1px solid tomato;
 }
@@ -236,13 +234,31 @@ h2{
     border: 1px solid tomato;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 769px) {
     .form-select{
         max-width: 40vw;
     }
 
     .service-container{
         flex-direction: column;
+    }
+
+    .carousel{
+        max-width: 70vw;
+    }
+    .carousel-caption{
+        display: block !important;
+        text-align: center;
+        margin-left: 10vw;
+    }
+    .carousel-caption h5{
+        font-size: 10px !important;
+        max-width: 30vw;
+        
+
+    }
+    .carousel-caption p{
+        display: none;
     }
 }
 

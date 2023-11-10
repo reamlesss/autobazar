@@ -1,247 +1,282 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet">
+  <title>Document</title>
 </head>
+
 <body>
-    
+
 
   <div class="modal" tabindex="-1" id="modal">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
           <h5 class="modal-title">Sušenky</h5>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close" ></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
           <p>Potvrzením potvrzujete že jste byl seznámen s našimi obchodními podmínkami sledování aktivity uživatelů</p>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal" >Upsat se</button>
-          
+          <button type="button" class="btn btn-secondary modal-close-button" data-bs-dismiss="modal">Upsat se</button>
+
         </div>
       </div>
     </div>
   </div>
 
-    <nav class="navbar navbar-expand-lg  fixed-top shadow-lg">
-        <div class="container-fluid">
-          <a class="navbar-brand font-weight-bold text-dark fw-bold" href="#">Autobazar</a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+  <nav class="navbar navbar-expand-lg  fixed-top shadow-lg">
+    <div class="container-fluid">
+      <a class="navbar-brand font-weight-bold text-dark fw-bold" href="#">Autobazar</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
 
-              <li class="nav-item">
-                <a class="nav-link active text-dark" aria-current="page" href="#">Domů</a>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link active text-dark" aria-current="page" href="#">Domů</a>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-dark" href="#">Oblíbené inzeráty</a>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Oblíbené inzeráty</a>
+          </li>
 
-              <li class="nav-item">
-                <a class="nav-link text-dark " href="./mojeinzeraty.html">Moje inzeráty</a>
-              </li>
+          <li class="nav-item">
+            <a class="nav-link text-dark " href="./mojeinzeraty.html">Moje inzeráty</a>
+          </li>
 
-              <li class="nav-item">
-               <a  class="nav-link text-dark" href="#">Přidat inzerát</a>
-              </li>
-            
-            </ul>
-            <form class="d-flex" role="search">
-              <input class="form-control me-2" type="search" placeholder="Nissan X-trail 2019" aria-label="Search">
-              <button class="btn btn-dark" type="submit">Vyhledat</button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          <li class="nav-item">
+            <a class="nav-link text-dark" href="#">Přidat inzerát</a>
+          </li>
 
-
-      <h2 class="text-dark">Filtrované vyhledávání</h2>
-<div class="filter-container">
-      <div class="filter">
-        <div class="form-floating mb-3">
-            <input type="text" class="form-control shadow-none " id="floatingInput" >
-            <label for="floatingInput">Název auta</label>
-          </div>
-
-          <select class="form-select shadow-none text-secondary" aria-label="Default select example">
-            <option selected class="text-secondary">Značka</option>
-            <option value="1">VW</option>
-            <option value="2">BMW</option>
-            <option value="3">Mercedes-Benz</option>
-          </select>
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control shadow-none " id="floatingInput" >
-            <label for="floatingInput">Najeto km</label>
-          </div>
-
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control shadow-none " id="floatingInput" >
-            <label for="floatingInput">Cena od (czk)</label>
-          </div>
-
-          <div class="form-floating mb-3">
-            <input type="number" class="form-control shadow-none " id="floatingInput" >
-            <label for="floatingInput">Cena do (czk)</label>
-          </div>
-          
-      </div>
-    </div>
-
-    <div class="search-button">
-        <button class="btn btn-primary fs-5" id="search-button">Vyhledat</button>
-    </div>
-      
-
-      
-      <h2 class="text-dark " ><strong style="color: tomato;">TOP</strong> inzeráty</h2>
-
-
-      <div class="carousel-container">
-        <div id="carouselExampleCaptions" class="carousel slide shadow-lg">
-            <div class="carousel-indicators">
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
-              <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
-            </div>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="https://www.bazos.cz/img/2/534/176766534.jpg?t=1699369661" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size: 40px;">BMW Z3 2.8 MANUÁL KABRIO KLIMA VÝHŘEV. BEZ KOROZE</h5>
-                  <p style="font-size: 20px;">Prodávám BMW Z3 2.8 s manuální převodovkou. Tento kabriolet je vybaven klimatizací a výhřevem, což zaručuje komfortní jízdu po celý rok.
-
-                  </p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://www.bazos.cz/img/3/795/176770795.jpg?t=1699376315" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size: 30px;">VW Transporter T6 Topení EBERSPACHER jako u Multivan</h5>
-                  <p style="font-size: 20px;">Stavba-dílna-zahrada-toto auto potěší každého pracovníka, firmu či kutila…</p>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <img src="https://www.bazos.cz/img/2/272/176697272.jpg?t=1699283990" class="d-block w-100 carousel-img" alt="...">
-                <div class="carousel-caption d-none d-md-block">
-                  <h5 style="font-size: 30px;">Smart Fortwo 0.6i PoloAutomat,STK do 4/024,Dobrý stav</h5>
-                  <p style="font-size: 20px;">PoloAUTOMAT. Sport-Line,model.2001,Naj.120tis.km</p>
-                </div>
-              </div>
-            </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="visually-hidden">Next</span>
-            </button>
-          </div>
-      </div>
-      
-      <h2 class="text-dark " >Naše služby</h2>
-
-      <div class="service-container">
-        <div class="tbr">
-        <table class="table table-bordered rounded">
-          <thead>
-            <tr>
-              <th scope="col">Služba</th>
-              <th scope="col">Cena</th>
-         
-            </tr>
-          </thead>
-          <tbody>
-            <tr>
-              <th scope="row">Dovoz vozidla</th>
-              <td>3000</td>
-              
-            </tr>
-            <tr>
-              <th scope="row">Prohlídka vozidla</th>
-              <td>2500</td>
-              
-            </tr>
-            <tr>
-              <th scope="row">Dovoz + prohlídka</th>
-              <td colspan="2">5300</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-        <ul class="list-group">
-          <li class="list-group-item"><strong>Služby</strong></li>
-          <li class="list-group-item">Prováděné profesionály</li>
-          <li class="list-group-item">Vše z pohodlí vašeho domova</li>
-          <li class="list-group-item">Garance vrácení peňěz</li>
         </ul>
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Nissan X-trail 2019" aria-label="Search">
+          <button class="btn btn-dark" type="submit">Vyhledat</button>
+        </form>
       </div>
-    
+    </div>
+  </nav>
 
-      <h2 class="text-dark " >Často kladené dotazy</h2>
 
-      
-      <div class="faq-container container">
-        <div class="accordion" id="accordionFlushExample">
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                Jak se bránit před podvody
-              </button>
-            </h2>
-            <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Před nákupem auta na autobazaru je důležité pečlivě promyslet svůj rozpočet a zohlednit náklady na provoz vozidla. Zjistěte si historii vozu, abyste měli jistotu, že nemá skryté problémy, jako je nehodová historie. Osobní prohlídka auta je nezbytná, abyste mohli pečlivě zkontrolovat motor, podvozek a interiér. Během testovací jízdy se ujistěte, že auto jezdí tak, jak očekáváte.
+  <h2 class="text-dark">Filtrované vyhledávání</h2>
+  <div class="filter-container">
+    <div class="filter">
+      <div class="form-floating mb-3">
+        <input type="text" class="form-control shadow-none " id="floatingInput">
+        <label for="floatingInput">Název auta</label>
+      </div>
 
-                Doporučuje se také získat nezávislý expertní pohled od mechanika nebo technika, který vám může poskytnout další informace o stavu vozidla. Nezapomeňte pečlivě prostudovat smlouvu a získat veškerou potřebnou dokumentaci, včetně výpisu z evidence vozidel, technického průkazu a servisní knížky.</div>
-            </div>
+      <select class="form-select shadow-none text-secondary" aria-label="Default select example">
+        <option selected class="text-secondary">Značka</option>
+        <option value="1">VW</option>
+        <option value="2">BMW</option>
+        <option value="3">Mercedes-Benz</option>
+      </select>
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control shadow-none " id="floatingInput">
+        <label for="floatingInput">Najeto km</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control shadow-none " id="floatingInput">
+        <label for="floatingInput">Cena od (czk)</label>
+      </div>
+
+      <div class="form-floating mb-3">
+        <input type="number" class="form-control shadow-none " id="floatingInput">
+        <label for="floatingInput">Cena do (czk)</label>
+      </div>
+
+    </div>
+  </div>
+
+  <div class="search-button">
+    <button class="btn btn-primary fs-5" id="search-button">Vyhledat</button>
+  </div>
+
+
+
+  <h2 class="text-dark "><strong style="color: tomato;">TOP</strong> inzeráty</h2>
+
+
+  <div class="carousel-container">
+    <div id="carouselExampleCaptions" class="carousel slide shadow-lg">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+          aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+          aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+          aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.bazos.cz/img/2/534/176766534.jpg?t=1699369661" class="d-block w-100 carousel-img"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="font-size: 40px;">BMW Z3 2.8 MANUÁL KABRIO KLIMA VÝHŘEV. BEZ KOROZE</h5>
+            <p style="font-size: 20px;">Prodávám BMW Z3 2.8 s manuální převodovkou. Tento kabriolet je vybaven
+              klimatizací a výhřevem, což zaručuje komfortní jízdu po celý rok.
+
+            </p>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                Záruka
-              </button>
-            </h2>
-            <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">
-                Tento autobazar poskytuje platformu pro inzerci vozidel ze strany jednotlivých uživatelů. Autor tohoto webu nezaručuje za přesnost, stav ani historii vozidel uvedených v inzerátech. Všechny inzeráty jsou zodpovědností inzerenta.
-                Před nákupem vozidla doporučujeme provést důkladnou prověrku, včetně osobní prohlídky a nezávislého expertního názoru. Ujistěte se, že všechny aspekty nákupu jsou pečlivě promyšleny a zváženy.
-                Tato platforma slouží pouze k propojení kupujících a prodávajících a nezaručuje žádné záruky ani nespočívá v odpovědnosti za jednotlivé inzeráty. Děkujeme za pochopení.
-              </div>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.bazos.cz/img/3/795/176770795.jpg?t=1699376315" class="d-block w-100 carousel-img"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="font-size: 30px;">VW Transporter T6 Topení EBERSPACHER jako u Multivan</h5>
+            <p style="font-size: 20px;">Stavba-dílna-zahrada-toto auto potěší každého pracovníka, firmu či kutila…</p>
           </div>
-          <div class="accordion-item">
-            <h2 class="accordion-header">
-              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                Podmínky pro inzerci
-              </button>
-            </h2>
-            <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
-              <div class="accordion-body">Uživatelé, kteří chtějí inzerovat svá auta na našem webu, musí splňovat následující podmínky: být plnoletí jednotlivci, poskytovat pravdivé a aktuální informace o vozidle, být vlastníky vozidla nebo mít oprávnění k jeho prodeji, uvádět platné informace o vozidle včetně technického průkazu, servisní historie a jiných relevantních dokumentů, neposkytovat nevhodný obsah v inzerátu, dodržovat všechny zákonné požadavky týkající se prodeje automobilů, být kontaktovatelní prostřednictvím informací uvedených v inzerátu, nést plnou zodpovědnost za obsah inzerátu a veškeré transakce spojené s prodejem vozidla, mít oprávnění od vlastníka vozidla k inzerci a prodeji vozidla, umisťovat inzerát v odpovídající kategorii a obsahovat všechny relevantní informace o vozidle.</div>
-            </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://www.bazos.cz/img/2/272/176697272.jpg?t=1699283990" class="d-block w-100 carousel-img"
+            alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5 style="font-size: 30px;">Smart Fortwo 0.6i PoloAutomat,STK do 4/024,Dobrý stav</h5>
+            <p style="font-size: 20px;">PoloAUTOMAT. Sport-Line,model.2001,Naj.120tis.km</p>
           </div>
         </div>
       </div>
-      
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+        data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+  </div>
 
-    <script>
-     document.addEventListener("DOMContentLoaded", function () {
+  <h2 class="text-dark ">Naše služby</h2>
+
+  <div class="service-container">
+    <div class="tbr">
+      <table class="table table-bordered rounded">
+        <thead>
+          <tr>
+            <th scope="col">Služba</th>
+            <th scope="col">Cena</th>
+
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Dovoz vozidla</th>
+            <td>3000</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Prohlídka vozidla</th>
+            <td>2500</td>
+
+          </tr>
+          <tr>
+            <th scope="row">Dovoz + prohlídka</th>
+            <td colspan="2">5300</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+    <ul class="list-group">
+      <li class="list-group-item"><strong>Služby</strong></li>
+      <li class="list-group-item">Prováděné profesionály</li>
+      <li class="list-group-item">Vše z pohodlí vašeho domova</li>
+      <li class="list-group-item">Garance vrácení peňěz</li>
+    </ul>
+  </div>
+
+
+  <h2 class="text-dark ">Často kladené dotazy</h2>
+
+
+  <div class="faq-container container">
+    <div class="accordion" id="accordionFlushExample">
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed " type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
+            Jak se bránit před podvody
+          </button>
+        </h2>
+        <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Před nákupem auta na autobazaru je důležité pečlivě promyslet svůj rozpočet a
+            zohlednit náklady na provoz vozidla. Zjistěte si historii vozu, abyste měli jistotu, že nemá skryté
+            problémy, jako je nehodová historie. Osobní prohlídka auta je nezbytná, abyste mohli pečlivě zkontrolovat
+            motor, podvozek a interiér. Během testovací jízdy se ujistěte, že auto jezdí tak, jak očekáváte.
+
+            Doporučuje se také získat nezávislý expertní pohled od mechanika nebo technika, který vám může poskytnout
+            další informace o stavu vozidla. Nezapomeňte pečlivě prostudovat smlouvu a získat veškerou potřebnou
+            dokumentaci, včetně výpisu z evidence vozidel, technického průkazu a servisní knížky.</div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
+            Záruka
+          </button>
+        </h2>
+        <div id="flush-collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">
+            Tento autobazar poskytuje platformu pro inzerci vozidel ze strany jednotlivých uživatelů. Autor tohoto webu
+            nezaručuje za přesnost, stav ani historii vozidel uvedených v inzerátech. Všechny inzeráty jsou
+            zodpovědností inzerenta.
+            Před nákupem vozidla doporučujeme provést důkladnou prověrku, včetně osobní prohlídky a nezávislého
+            expertního názoru. Ujistěte se, že všechny aspekty nákupu jsou pečlivě promyšleny a zváženy.
+            Tato platforma slouží pouze k propojení kupujících a prodávajících a nezaručuje žádné záruky ani nespočívá v
+            odpovědnosti za jednotlivé inzeráty. Děkujeme za pochopení.
+          </div>
+        </div>
+      </div>
+      <div class="accordion-item">
+        <h2 class="accordion-header">
+          <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+            data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
+            Podmínky pro inzerci
+          </button>
+        </h2>
+        <div id="flush-collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+          <div class="accordion-body">Uživatelé, kteří chtějí inzerovat svá auta na našem webu, musí splňovat
+            následující podmínky: být plnoletí jednotlivci, poskytovat pravdivé a aktuální informace o vozidle, být
+            vlastníky vozidla nebo mít oprávnění k jeho prodeji, uvádět platné informace o vozidle včetně technického
+            průkazu, servisní historie a jiných relevantních dokumentů, neposkytovat nevhodný obsah v inzerátu,
+            dodržovat všechny zákonné požadavky týkající se prodeje automobilů, být kontaktovatelní prostřednictvím
+            informací uvedených v inzerátu, nést plnou zodpovědnost za obsah inzerátu a veškeré transakce spojené s
+            prodejem vozidla, mít oprávnění od vlastníka vozidla k inzerci a prodeji vozidla, umisťovat inzerát v
+            odpovídající kategorii a obsahovat všechny relevantní informace o vozidle.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
       var modal = new bootstrap.Modal(document.getElementById("modal"));
       modal.show();
     });
-    </script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+  </script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
 
 
 </body>
+
 </html>
