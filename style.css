@@ -88,6 +88,7 @@ h2{
 .search-button{
     display: flex;
     justify-content: center;
+    border: none !important;
 }
 
 #search-button{
